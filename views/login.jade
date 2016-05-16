@@ -1,0 +1,18 @@
+extends ./layout.jade
+block contenido
+	form(action="/users",method="POST")
+		div(class="container-fluid")
+			div(class="container")
+				div(class="row")
+					div(class="col-md-4 col-lg-4 visible-lg visible-md")
+					div(class="col-md-4 col-lg-4 col-sm-12 col-xs-12")
+						div(class="form-group")
+							label(for="email") Email
+							input(type="text",name="email",placeholder="Escriba su mail",id="email" class="form-control")
+						div(class="form-group")
+							label(for="clave") Clave
+							input(type="password" name="clave" placeholder="Escriba su clave" id="clave" class="form-control")
+						div(class="form-group")
+							input(type="submit" name="init" class="form-control" value="Iniciar Sessión" class="btn-danger")
+					div(class="col-md-4 col-lg-4 visible-lg visible-md")
+				
